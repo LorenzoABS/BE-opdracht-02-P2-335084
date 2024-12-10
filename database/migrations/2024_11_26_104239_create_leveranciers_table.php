@@ -25,5 +25,5 @@ return new class extends Migration
     public function down(): void
     {
         DB::statement('DROP PROCEDURE IF EXISTS create_leveranciers_table');
-    }
+    } 
 };

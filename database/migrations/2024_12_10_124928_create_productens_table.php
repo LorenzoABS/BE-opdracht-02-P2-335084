@@ -16,7 +16,7 @@ return new class extends Migration
             $table->decimal('prijs', 8, 2);
             $table->text('beschrijving')->nullable();
             $table->foreignId('leverancier_id')->constrained('leveranciers')->onDelete('cascade');
-            $table->timestamps();
+            $table->timestamps(); 
         });
         
     
