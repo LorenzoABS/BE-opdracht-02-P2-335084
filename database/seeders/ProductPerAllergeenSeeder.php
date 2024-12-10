@@ -14,4 +14,4 @@ class ProductPerAllergeenSeeder extends Seeder
     {
         //
     }
-}
+} 

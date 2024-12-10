@@ -22,7 +22,7 @@ class leverancierSeeder extends Seeder
             'aantal_verschillende_producten' => 4,
         ],
         [
-            'naam' => 'Astra Sweets',
+            'naam' => 'Astra Sweets', 
             'contactpersoon' => 'Jasper del Monte',
             'leveranciernummer' => 'L1029284315',
             'mobiel' => '06-39398734',

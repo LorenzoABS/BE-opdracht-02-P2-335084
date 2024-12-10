@@ -12,6 +12,6 @@ class ProductPerLeverancierSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        // 
     }
 }
