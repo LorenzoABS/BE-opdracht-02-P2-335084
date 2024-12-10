@@ -26,3 +26,4 @@ class Product extends Model
         return $this->belongsTo(Leverancier::class);
     }
 }
+ 

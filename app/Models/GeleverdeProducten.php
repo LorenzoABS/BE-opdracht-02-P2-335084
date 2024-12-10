@@ -14,7 +14,7 @@ class GeleverdeProducten extends Model
     protected $fillable = [
         'leverancier_id',
         'naam_product',
-        'aantal_in_magazijn',
+        'aantal_in_magazijn', 
         'verpakkingsgrootte',
         'laatste_levering',
         'nieuwe_levering',

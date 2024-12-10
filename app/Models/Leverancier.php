@@ -11,7 +11,7 @@ class Leverancier extends Model
     use HasFactory;
 
     protected $fillable = [
-        'naam',
+        'naam', 
         'contactpersoon',
         'leveranciernummer',
         'mobiel',
