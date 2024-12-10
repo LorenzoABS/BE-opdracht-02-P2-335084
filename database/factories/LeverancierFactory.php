@@ -20,4 +20,4 @@ class LeverancierFactory extends Factory
             //
         ];
     }
-}
+} 
