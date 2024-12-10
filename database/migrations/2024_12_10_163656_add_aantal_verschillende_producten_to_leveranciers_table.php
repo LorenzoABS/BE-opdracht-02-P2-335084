@@ -11,17 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('products_procedure', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::table('leveranciers', function (Blueprint $table) {
+            $table->integer('aantal_verschillende_producten')->after('mobiel')->default(0);
         });
-    } 
+    }
 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('products_procedure');
+        Schema::table('leveranciers', function (Blueprint $table) {
+            $table->dropColumn('aantal_verschillende_producten');
+        });
     }
 };
