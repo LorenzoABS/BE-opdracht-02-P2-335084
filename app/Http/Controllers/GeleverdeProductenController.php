@@ -7,7 +7,7 @@ use App\Models\GeleverdeProducten;
 
 class GeleverdeProductenController extends Controller
 {
-    public function index()
+    public function index() 
     {
         $leveranciers = GeleverdeProducten::all();
 

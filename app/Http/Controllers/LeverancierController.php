@@ -7,7 +7,7 @@ use App\Models\Leverancier;
 
 class LeverancierController extends Controller
 {
-    public function index()
+    public function index() 
     {
         // Ophalen van alle leveranciers
         $leveranciers = Leverancier::all();
