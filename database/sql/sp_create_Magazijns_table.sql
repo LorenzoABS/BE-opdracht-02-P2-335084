@@ -1,0 +1,13 @@
+CREATE PROCEDURE IF NOT EXISTS create_Magazijns_table()
+BEGIN
+    CREATE TABLE IF NOT EXISTS Magazijns (
+        Id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY NOT NULL
+        ,ProductId INT foreign key NOT NULL
+        ,VerpakkingsEenheid VARCHAR(10) NOT NULL                
+        ,AantalAanwezig VARCHAR(10) NOT NULL  
+        ,IsActive BIT NOT NULL DEFAULT 1
+        ,Comments VARCHAR(255) NULL
+        ,CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        ,UpdatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    ) ENGINE=InnoDB;
+END;
